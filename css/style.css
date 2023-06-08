@@ -107,6 +107,7 @@ h3 {
     font-size: 0.95em;
 }
 select{
+ appearance: none;
 position: relative;
 opacity: 0.6;
 }
