@@ -107,11 +107,12 @@ h3 {
     font-size: 0.95em;
 }
 select{
-    opacity: 0;
+position: relative;
+opacity: 0.6;
 }
 .label-select{
     position: relative;
-    width: 234px;
+    width: 245px;
     height: 37px;
     border-radius: 6px;
     border: 1px solid #E4E4E4;
@@ -122,9 +123,10 @@ select{
     position: absolute;
     top: 7px;
     cursor: pointer;
-    left: 205px;
+    left: 221px;
     width: 13px;
     height: 13px;
+    opacity: 1;
 
 }
 
