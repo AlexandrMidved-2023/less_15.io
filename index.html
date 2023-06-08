@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form's Style</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delius+Unicase&family=Roboto:wght@100;300;400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <main class="main">
+
+        <section class="section--account">
+            <form class="form" autocomplete="off">
+                <h1>
+                    Create an Account
+                </h1>
+                <div class="name">
+                    <div class="field">
+                        <label for="first-name" class="form-label">First name</label>
+                        <input type="text" id="first-name" class="form-input--name" placeholder="">
+                    </div>
+
+                    <div class="field">
+                        <label for="last-name" class="form-label">Last name</label>
+                        <input type="text" id="last-name" class="form-input--name" placeholder="">
+                    </div>
+                </div>
+
+                <label for="mail" class="form-label">E-mail</label>
+                <input type="email" id="mail" class="form-input--mail" placeholder="" required>
+                <h3>
+                    We'll never share your email with anyone else.
+                </h3>
+                <div class="form-gender gender">
+                    <div class="gender-item">
+                        <label>
+                            <input type="radio" name="gender">
+                            <span></span>
+                            Male
+
+                        </label>
+                        <label>
+                            <input type="radio" name="gender">
+                            <span></span>
+                            Female
+                        </label>
+                    </div>
+                </div>
+
+                <div class="location">
+                    <div class="field">
+                        <label class="form-label">Country</label>
+                        <label class="label-select">
+                            <select name="country" class="form-select">
+                                <option class="sel" value="" selected disabled>Select</option>
+                                <option value="ukr">Ukraine</option>
+                                <option value="swe">Sweden</option>
+                                <option value="pol">Poland</option>
+                                <option value="frn">France</option>
+                            </select>
+                        </label>
+                    </div>
+
+                    <div class="field">
+                        <label for="city" class="form-label">City</label>
+                        <input type="text" id="city" class="form-input--name" placeholder="">
+                    </div>
+                </div>
+
+                <div class="buttons">
+                    <a href="#" class="button"> Sign Up</a>
+                </div>
+
+                <div class="policy">
+                    <p> By clicking the 'Sign Up' button, you confirm that you accept our </p>
+                    <div class="policy-links">
+                        <a href="#" class="policy-link"> Terms of use </a>
+                        <p>and</p>
+                        <a href="#" class="policy-link"> Privacy Policy </a>
+                    </div>
+                </div>
+
+
+                <div class="account">
+                    <p>
+                        Have an account? <a href="#"> Log in</a>
+                    </p>
+                </div>
+
+            </form>
+        </section>
+        <section class="section--profile">
+            <form class="form" autocomplete="off">
+                <h1>
+                    Your profile
+                </h1>
+                <div class="photo">
+                    <img src="./assets/img/photo.png" alt="portrait">
+                    <div class="download">
+                        <label class="form-input--dwl">
+                            <input type="file">
+                        </label>
+                        <p>
+                            Up to 1 MB (300x300 px)
+                        </p>
+                    </div>
+                    <label class="trash">
+                        <button type="reset"></button>
+                    </label>
+                </div>
+
+                <div class="name">
+                    <div class="field">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" id="name" class="form-input--name" placeholder="">
+                    </div>
+
+                    <div class="field">
+                        <label for="e-mail" class="form-label">E-mail</label>
+                        <input type="text" id="e-mail" class="form-input--name" placeholder="">
+                    </div>
+                </div>
+
+                <div class="location--profile">
+                    <div class="field">
+                        <label class="form-label">Country</label>
+                        <label class="label-select">
+                            <select name="country" class="form-select">
+                                <option class="sel" value="" selected disabled>Select</option>
+                                <option value="ukr">Ukraine</option>
+                                <option value="swe">Sweden</option>
+                                <option value="pol">Poland</option>
+                                <option value="frn">France</option>
+                            </select>
+                        </label>
+                    </div>
+
+                    <div class="field">
+                        <label for="cuty-2" class="form-label">City</label>
+                        <input type="text" id="cuty-2" class="form-input--name" placeholder="">
+                    </div>
+                </div>
+
+                <div class="zip_code">
+                    <div class="field">
+                        <label for="zip" class="form-label">Zip Code</label>
+                        <input type="text" id="zip" class="form-input--name" placeholder="">
+                    </div>
+
+                    <div class="field">
+                        <label for="phone" class="form-label">Phone number</label>
+                        <input type="text" id="phone" class="form-input--name" placeholder="">
+                    </div>
+                </div>
+
+                <div class="buttons">
+                    <a href="#" class="button--profile">Update</a>
+                </div>
+            </form>
+        </section>
+
+    </main>
+</body>
+
+</html>

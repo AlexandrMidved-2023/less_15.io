@@ -1,0 +1,291 @@
+@import url(./normalize.css);
+@import url(./vars.css);
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    min-height: 100vh;
+    font-family: var(--main-font-family);
+    background: #E5E5E5;
+    font-size: var(--font-size-main);
+    color: #2B4F67;
+    overflow: hidden;
+}
+
+.main {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin: 10% 0;
+}
+
+.section--account,
+.section--profile {
+    height: 590px;
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    color: #1C1C1C;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.name,
+.location,
+.location--profile,
+.zip_code {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+}
+
+.form {
+    width: 570px;
+    display: flex;
+    flex-direction: column;
+    padding: 26px;
+    border-radius: 6px;
+    background: #fff;
+}
+
+.form-label {
+    margin-bottom: 7px;
+    font-size: 0.85em;
+}
+
+.form-input,
+.form-select,
+.form-gender {
+    margin-bottom: 16px;
+    border-radius: 8px;
+}
+
+.form-input--name,
+.form-select {
+    border: 1px solid #E4E4E4;
+    margin-bottom: 7px;
+    border-radius: 6px;
+    width: 245px;
+    min-height: 38px;
+}
+
+.form-input--mail {
+    border: 1px solid #E4E4E4;
+    margin-bottom: 7px;
+    border-radius: 6px;
+    width: 500px;
+    min-height: 38px;
+}
+
+.gender-item label input {
+    opacity: 0;
+}
+
+h3 {
+    font-size: 13px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: #969696;
+}
+
+.form-input,
+.form-select {
+    padding: 6px 8px;
+    border: 1px solid #E4E4E4;
+    font-size: 0.95em;
+}
+select{
+    opacity: 0;
+}
+.label-select{
+    position: relative;
+    width: 234px;
+    height: 37px;
+    border-radius: 6px;
+    border: 1px solid #E4E4E4;
+}
+.label-select::before{
+    content: url(../assets/img/arrow.svg);
+    padding: 6px 8px;
+    position: absolute;
+    top: 7px;
+    cursor: pointer;
+    left: 205px;
+    width: 13px;
+    height: 13px;
+
+}
+
+.gender-item {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.gender-item label>span {
+    display: inline-block;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #E4E4E4;
+    border-radius: 50%;
+    left: -17px;
+    top: 5px;
+}
+
+
+.gender-item label>span::after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -1px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    box-shadow: 0 0 0px 6px #007BFF inset;
+    opacity: 0;
+}
+
+.button {
+    display: block;
+    background-color: #007BFF;
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+    color: #fff;
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 22px;
+    padding: 8px 10px;
+}
+
+
+p {
+    font-size: 13px;
+    font-weight: 400;
+    text-align: center;
+    color: #969696;
+}
+
+.policy {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.policy-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+.policy-link {
+    font-size: 13px;
+    line-height: 18px;
+    color: #007BFF;
+}
+
+.account {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    padding-top: 20px;
+    border-top: 1px #000000 solid;
+}
+
+.gender-item label input:checked~span::after {
+    opacity: 1;
+}
+
+a {
+    text-decoration: none;
+}
+
+.photo {
+    display: flex;
+    position: relative;
+}
+
+input[type="file"] {
+    opacity: 0;
+}
+
+.form-input--dwl {
+    margin-top: 24px;
+    margin-bottom: 10px;
+    display: block;
+    width: 138px;
+    height: 30px;
+    border: #E4E4E4 1px solid;
+    border-radius: 6px;
+}
+
+.form-input--dwl::after {
+    content: url(../assets/img/icon-ph.png);
+    padding: 6px 8px;
+    position: absolute;
+    top: 26px;
+    cursor: pointer;
+    left: 205px;
+}
+
+.form-input--dwl:focus {
+    border: 1px solid #BC3F3F;
+}
+
+button[type="reset"] {
+    opacity: 0;
+}
+
+.trash::after {
+    content: url(../assets/img/icon-crash.png);
+    padding: 6px 8px;
+    border: #E4E4E4 1px solid;
+    border-radius: 6px;
+    position: absolute;
+    top: 23px;
+    cursor: pointer;
+}
+
+img {
+    height: 80px;
+    width: 80px;
+    margin-bottom: 9px;
+    margin-right: 20px;
+}
+
+.button--profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 38px;
+
+    background-color: #007BFF;
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+    color: #fff;
+    margin-top: 20px;
+}
+
+input:focus {
+    outline: 0;
+    outline-offset: 0;
+    border: 1px solid #007BFF;
+}
+input:hover{
+    border: 1px solid #51ff00;
+}
